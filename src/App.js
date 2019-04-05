@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <img src={AnnieHall} alt="Annie Hall" className="fave"/>
-        <Titles />
+        <TVseries />
       </div>
       
 
