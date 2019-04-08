@@ -9,15 +9,27 @@ import img6 from "./Series/img6.jpg";
 function TVseries() {
     return(
         <div className="series">
-            <div className="flex1">
-                <img src={img1} ></img>
-                <img src={img2} ></img>
-                <img src={img3} ></img>
-            </div>               
-            <div className="flex2">
-                <img src={img4} ></img>
-                <img src={img5} ></img>
-                <img src={img6} ></img>
+            <div className="container">
+                <div>
+                    <img src={img1} className="item" alt="cover pic"></img>
+                </div> 
+                <div>  
+                    <img src={img2} className="item" alt="cover pic"></img>
+                </div>
+                <div> 
+                    <img src={img3} className="item" alt="cover pic"></img>
+                </div>   
+            </div>           
+            <div className="container">
+                <div> 
+                    <img src={img4} className="item" alt="cover pic"></img>
+                </div>
+                <div>    
+                    <img src={img5} className="item" alt="cover pic"></img>
+                </div>
+                <div> 
+                    <img src={img6} className="item" alt="cover pic"></img>
+                </div>
             </div>
         </div>
     )

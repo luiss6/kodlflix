@@ -1,38 +1,22 @@
 .App {
   text-align: center;
-  
+  /* background-color: rgb(86, 138, 66); */
 }
 
-.fave {
-  width: 100%;
-  height: 60%;
 
-}
-
-.series {
+.container {
   display: flex;
-  flex-direction: column;
-  align-content: space-between;
+  flex-direction: row;
+ }
+
+.item{
+  flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
   }
-
-.flex1 {
-  display: flex;
-  flex-direction: row;
 }
 
-.flex2{
-  display: flex;
-  flex-direction: row;
-}
 
-.titles {
-  
-
-}
-
-p{
-  margin: 30px;
-  text-align: center;
-  font-size: 4em;
-  flex:1;
-}
