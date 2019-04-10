@@ -4,7 +4,7 @@ html {
 
 .App {
   text-align: center;
-  background-color: whitesmoke;
+  background-color: black;
 }
 
 
@@ -12,6 +12,7 @@ html {
   display: flex;
   flex-direction: row;
   background-color: black;
+  
 
 }
 
@@ -23,24 +24,27 @@ html {
 .item {
   flex: 1;  
   font-family: sans-serif;
-      
+  padding: 0px;
+        
 }
 
 .container:hover .overlay{
-  display: block;
+  /* color:rgb(245, 7, 7); */
   bottom: 0;
+  
   
 }
 
+
+
 .overlay {
-  transition: bottom ease-out 2s;
+  transition: bottom linear 1s;
   position: absolute;
-  bottom: 50;
-  text-align: center;
+  bottom: -30px;
   border: solid rgba(62, 63, 63, 0.993);
   color:white;
-  padding: 5px;
-  background-color: black;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.767);
   border-radius: 15%;
   font-family: nf-icon;
   font-weight: bold;
