@@ -7,7 +7,7 @@ import img5 from "./Series/img5.jpg";
 import img6 from "./Series/img6.jpg";
 import SingleTitle from "./SingleTitle";
 
-function TVseries() {
+function Gallery() {
     return (
         <div className="series">
             <div className="box">
@@ -47,4 +47,4 @@ function TVseries() {
 
 
 
-export default TVseries
+export default Gallery;
