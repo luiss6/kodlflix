@@ -16,28 +16,26 @@ html {
 
 }
 
-.container {
+.singleTitle {
   position: relative;
   overflow: hidden;
 }
 
-.item {
+.showPicture {
   flex: 1;  
   font-family: sans-serif;
   padding: 0px;
         
 }
 
-.container:hover .overlay{
+.singleTitle:hover .showTitle{
   /* color:rgb(245, 7, 7); */
-  bottom: 0;
-  
-  
+  bottom: 0;  
 }
 
 
 
-.overlay {
+.showTitle {
   transition: bottom linear 1s;
   position: absolute;
   bottom: -30px;
