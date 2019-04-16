@@ -6,6 +6,7 @@ import img4 from "./Series/img4.jpg";
 import img5 from "./Series/img5.jpg";
 import img6 from "./Series/img6.jpg";
 import SingleTitle from "./SingleTitle";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function Gallery() {
     return (

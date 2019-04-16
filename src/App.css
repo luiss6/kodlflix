@@ -48,6 +48,10 @@ html {
   font-weight: bold;
 }
 
+.showDetails {
+  color: rgb(224, 25, 174);
+}
+
 
 @media only screen and (max-width: 600px) {
   .box {
