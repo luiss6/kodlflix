@@ -2,16 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-function SingleTitle (props) {
+function SingleTitle(props) {
     return (
-        <div className="singleTitle">
-
-                    <Link to='/details' target='_blank'>
-                        <img src={props.image} className="showPicture" alt="cover pic" />
-                    </Link>
-                    <div className="showTitle overlay">{props.title}</div>
-                    
-        </div>
+        <Link to={`/${props.id}`} target='_blank' className="singleTitle">
+            <img src={props.image} className="showPicture" alt={`${props.title} logo`} />
+            <div className="showTitle overlay">{props.title}</div>
+        </Link>
     );
 }
 

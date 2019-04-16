@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "./Series/img1.jpg";
-import img2 from "./Series/img2.jpg";
-import img3 from "./Series/img3.jpg";
-import img4 from "./Series/img4.jpg";
-import img5 from "./Series/img5.jpg";
-import img6 from "./Series/img6.jpg";
+import Xfiles from "./Series/Xfiles.jpg";
+import Homeland from "./Series/Homeland.jpg";
+import MrRobot from "./Series/MrRobot.jpg";
+import TheOffice from "./Series/TheOffice.jpg";
+import Seinfeld from "./Series/Seinfeld.jpg";
+import Sherlock from "./Series/Sherlock.jpg";
 import SingleTitle from "./SingleTitle";
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -12,31 +12,37 @@ function Gallery() {
     return (
         <div className="series">
             <div className="box">
-                <SingleTitle 
-                    image={img1}
-                    title="X-files"          
+                <SingleTitle
+                    image={Xfiles}
+                    title="Xfiles"
+                    id="x-files"
                 />
-                <SingleTitle 
-                    image={img2}
-                    title="Homeland"          
+                <SingleTitle
+                    image={Homeland}
+                    title="Homeland"
+                    id="homeland"
                 />
-                <SingleTitle 
-                    image={img3}
-                    title="Mr Robot"          
+                <SingleTitle
+                    image={MrRobot}
+                    title="MrRobot"
+                    id="mr-robot"
                 />
             </div>
             <div className="box">
-                <SingleTitle 
-                    image={img4}
-                    title="The Office"          
+                <SingleTitle
+                    image={TheOffice}
+                    title="TheOffice"
+                    id="the-office"
                 />
-                <SingleTitle 
-                    image={img5}
-                    title="Seinfeld"          
+                <SingleTitle
+                    image={Seinfeld}
+                    title="Seinfeld"
+                    id="seinfeld"
                 />
-                <SingleTitle 
-                    image={img6}
-                    title="Sherlock"          
+                <SingleTitle
+                    image={Sherlock}
+                    title="Sherlock"
+                    id="sherlock"
                 />
             </div>
         </div>
