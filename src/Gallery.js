@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css"
 import Xfiles from "./Series/Xfiles.jpg";
 import Homeland from "./Series/Homeland.jpg";
 import MrRobot from "./Series/MrRobot.jpg";
@@ -10,41 +11,13 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 function Gallery() {
     return (
-        <div className="series">
-            <div className="box">
-                <SingleTitle
-                    image={Xfiles}
-                    title="Xfiles"
-                    id="x-files"
-                />
-                <SingleTitle
-                    image={Homeland}
-                    title="Homeland"
-                    id="homeland"
-                />
-                <SingleTitle
-                    image={MrRobot}
-                    title="MrRobot"
-                    id="mr-robot"
-                />
-            </div>
-            <div className="box">
-                <SingleTitle
-                    image={TheOffice}
-                    title="TheOffice"
-                    id="the-office"
-                />
-                <SingleTitle
-                    image={Seinfeld}
-                    title="Seinfeld"
-                    id="seinfeld"
-                />
-                <SingleTitle
-                    image={Sherlock}
-                    title="Sherlock"
-                    id="sherlock"
-                />
-            </div>
+        <div className="box">
+            <SingleTitle image={Xfiles} title="X-files" id="x-files" />
+            <SingleTitle image={Homeland} title="Homeland" id="homeland" />
+            <SingleTitle image={MrRobot} title="Mr Robot" id="mr-robot" />
+            <SingleTitle image={TheOffice} title="The Office" id="the-office" />
+            <SingleTitle image={Seinfeld} title="Seinfeld" id="seinfeld" />
+            <SingleTitle image={Sherlock} title="Sherlock" id="sherlock" />
         </div>
     )
 }

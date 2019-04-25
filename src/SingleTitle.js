@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./App.css";
 
 
 function SingleTitle(props) {
     return (
-        <Link to={`/${props.id}`} target='_blank' className="singleTitle">
-            <img src={props.image} className="showPicture" alt={`${props.title} logo`} />
-            <div className="showTitle overlay">{props.title}</div>
+        <Link to={`/${props.id}`} target='_blank' className="cover">
+            <img src={props.image} alt={`${props.title} logo`} />
+            <div className="cover-overlay">
+                <h1>{props.title}</h1>
+            </div>
         </Link>
     );
 }
