@@ -1,30 +1,24 @@
 import React from "react";
 import "./App.css"
-import Xfiles from "./Series/Xfiles.jpg";
-import Homeland from "./Series/Homeland.jpg";
-import MrRobot from "./Series/MrRobot.jpg";
-import TheOffice from "./Series/TheOffice.jpg";
-import Seinfeld from "./Series/Seinfeld.jpg";
-import Sherlock from "./Series/Sherlock.jpg";
 import SingleTitle from "./SingleTitle";
+import showsData from "./showsData";
 import { BrowserRouter as Router } from 'react-router-dom';
+import ShowDetails from "./ShowDetails";
+
 
 function Gallery() {
+
+    const showsComponent = showsData.map(show => {
+        return <SingleTitle image={show.image} title={show.title} id={show.id} />;
+    })
+    
+
     return (
         <div className="box">
-            <SingleTitle image={Xfiles} title="X-files" id="x-files" />
-            <SingleTitle image={Homeland} title="Homeland" id="homeland" />
-            <SingleTitle image={MrRobot} title="Mr Robot" id="mr-robot" />
-            <SingleTitle image={TheOffice} title="The Office" id="the-office" />
-            <SingleTitle image={Seinfeld} title="Seinfeld" id="seinfeld" />
-            <SingleTitle image={Sherlock} title="Sherlock" id="sherlock" />
+            {showsComponent}
         </div>
     )
 }
-
-
-
-
 
 
 export default Gallery;
