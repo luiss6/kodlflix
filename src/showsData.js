@@ -5,7 +5,8 @@ import TheOffice from "./Series/TheOffice.jpg";
 import Seinfeld from "./Series/Seinfeld.jpg";
 import Sherlock from "./Series/Sherlock.jpg";
 
-const showsData = [
+function showsData () {
+    return  [
     {
         image: Xfiles,
         title: "X-files", 
@@ -42,6 +43,7 @@ const showsData = [
         id: "sherlock",
     }
     ];
+}
 
 
 export default showsData;
