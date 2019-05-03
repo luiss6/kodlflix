@@ -2,21 +2,23 @@ import React, { Component } from 'react';
 import './App.css';
 import Gallery from "./Gallery";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import SingleTitle from './SingleTitle';
 import ShowDetails from './ShowDetails';
+import NotFound from "./NotFound";
 
 
 class App extends Component {
   render() {
     return (
+      
       <Router>
-        <Switch>
-          <div className="App">
+        <div className="App">
+          <Switch>
             <Route exact path="/" component={Gallery} />
+            <Route exact path="/not-found" component={NotFound} />
             <Route exact path="/:movieId" component={ShowDetails} />
-          </div>
-        </Switch>
-      </Router>
+          </Switch>   
+        </div>        
+      </Router >
     )
   }
 }
