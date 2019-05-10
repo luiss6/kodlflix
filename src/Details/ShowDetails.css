@@ -1,0 +1,24 @@
+
+.ShowDetails .container{
+    display: flex;   
+}
+
+/* .ShowDetails .container .text,
+.ShowDetails .container .image {
+    padding: 15px;
+} */
+
+/* .text{
+    color: white;
+}
+.showDetails {
+    color: rgb(255, 0, 0);
+  } */
+
+
+@media only screen and (max-width: 600px) {
+    .ShowDetails .container{
+        display: flex;   
+        flex-direction: column;
+    }  
+  }

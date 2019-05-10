@@ -1,5 +1,7 @@
-html {
+body {
   background-color: black;
+  color: white;
+  font-style: helvetica;
 }
 
 .App {
@@ -19,7 +21,7 @@ html {
 
 .box > * {
   flex: 1;  
-  flex-basis: 300px;
+  flex-basis: 400px;
   position: relative;
   overflow: hidden;
 }
@@ -31,11 +33,12 @@ html {
 }
 
 .cover-overlay {
-  transition: bottom ease-out 2s;
+  transition: bottom ease-out 1s;
   bottom: -100%;
   position: absolute;
-  background-color: red;
-  color: black;
+  opacity: 0.7;
+  background-color: black;
+  color: white;
   text-align: center;
   padding: 30px;
   width: 100%;
@@ -44,12 +47,12 @@ html {
   font-weight: bold;
   left: 0;
   box-sizing: border-box;  
-  height: 30%;
+  
 }
 
 
 .cover:hover .cover-overlay {
-  color:rgb(245, 7, 7);
+  /* color:rgb(245, 7, 7); */
   bottom: 0;  
 }
 
@@ -57,15 +60,13 @@ html {
 
 
 
-.showDetails {
-  color: rgb(255, 0, 0);
-}
 
 
-/* @media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 600px) {
   .box {
     flex-direction: column;
   }
-} */
+}
 
 

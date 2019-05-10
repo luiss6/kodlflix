@@ -8,7 +8,7 @@ import showsData from "./showsData";
 function Gallery() {
 
     const showsComponent = showsData().map(show => {
-        return <SingleTitle  key={show.id} id={show.id} title={show.title} image={show.image}/>;
+        return <SingleTitle  key={show.id} id={show.id} title={show.title} image={show.image} synopsis={show.synopsis}/>;
     })
     
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, Redirect } from "react-router-dom";
-import showsData from "./showsData";
+import showsData from "../showsData";
+import "./ShowDetails.css";
 
 class ShowDetails extends React.Component {
     constructor() {
@@ -12,8 +13,7 @@ class ShowDetails extends React.Component {
 
     componentDidMount() {
         let movieId = this.props.match.params.movieId;       
-        let show = showsData().find(show => show.id === movieId);
-        
+        let show = showsData().find(show => show.id === movieId);        
         this.setState({ show });       
     }
 
@@ -24,8 +24,14 @@ class ShowDetails extends React.Component {
             return <Redirect to="/not-found" />
         } else {
         return (
-            <div>
-                <h1 className="showDetails">{this.state.show.title}</h1>
+            <div className="ShowDetails">
+                <h1>{this.state.show.title}</h1>
+                <div className="container">
+                    <div className="text">
+                        <p>{this.state.show.synopsis}</p>
+                    </div>
+                    <img className="image" src={this.state.show.image} alt={this.state.show.name}/>                  
+                </div>
                 <Link to='/'>Go back to the shows Gallery</Link>
             </div>
         );

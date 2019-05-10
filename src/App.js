@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Gallery from "./Gallery";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import ShowDetails from './ShowDetails';
+import ShowDetails from './Details/ShowDetails';
 import NotFound from "./NotFound";
 
 
