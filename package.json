@@ -7,8 +7,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8",
-    "npm-run-all": "^4.1.5"
+    "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,6 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "start-backend": "node src/backend/app.js",
+    "npm-run-all": "^4.1.5" 
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -26,5 +27,9 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-
+  "devDependencies": {       
+  },
+  
+  "proxy": "http://localhost:3001"
 }
+
