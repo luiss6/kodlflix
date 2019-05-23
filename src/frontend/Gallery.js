@@ -6,23 +6,21 @@ import showsData from "./showsData";
 
 
 function Gallery() {
-
     
-        // fetch('/rest/shows')
-        // .then(function(response) {
-        //   return response.json();
-        // })
-        // .then(function(myJson) {
-        //   console.log(JSON.stringify(myJson));
-        // });
-    
+        fetch('/rest/showsData')
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(myJson) {
+          console.log(JSON.stringify(myJson));
+        });
 
 
     
 
-    // const showsComponent = showsData().map(show => {
-    //     return <SingleTitle  key={show.id} id={show.id} title={show.title} image={show.image} synopsis={show.synopsis}/>;
-    // })
+    const showsComponent = showsData().map(show => {
+        return <SingleTitle  key={show.id} id={show.id} title={show.title} image={show.image} synopsis={show.synopsis}/>;
+    })
     
     // render() {
         return (
