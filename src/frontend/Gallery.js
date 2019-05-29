@@ -22,7 +22,6 @@ function Gallery() {
         return <SingleTitle  key={show.id} id={show.id} title={show.title} image={show.image} synopsis={show.synopsis}/>;
     })
     
-    // render() {
         return (
             <div className="box">{
                 showsData().map(show => {
@@ -34,7 +33,7 @@ function Gallery() {
                 })
             }</div>
         );
-    // }
+
 }
 
 
