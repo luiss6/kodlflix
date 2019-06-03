@@ -5,8 +5,8 @@ import "./App.css";
 
 function SingleTitle(props) {
     return (
-        <Link to={`/${props.id}`} className="cover">
-            <img src={props.image} alt={`${props.title} logo`} />
+        <Link to={`/${props.id}`} className="cover">           
+            <img src={require(`./common/images/${props.id}.jpg`)} alt={`${props.title} logo`} />
             <div className="cover-overlay">
                 <h1>{props.title}</h1>
             </div>

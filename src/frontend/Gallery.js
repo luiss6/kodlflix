@@ -1,38 +1,38 @@
 import React from "react";
 import "./App.css"
 import SingleTitle from "./SingleTitle";
-import showsData from "./showsData";
 
-
-
-function Gallery() {
+class Gallery extends React.Component {    
+    constructor() {
+        super();
+        this.state = { shows: [] };
+    }      
     
-        fetch('/rest/showsData')
-        .then(function(response) {
-          return response.json();
-        })
-        .then(function(myJson) {
-          console.log(JSON.stringify(myJson));
-        });
-
+        componentDidMount() {
+            fetch("/rest/showsData")
+            .then(response => response.json())
+            .then(shows => this.setState({ shows: shows }));
+        }
+    
+  
 
     
-
-    const showsComponent = showsData().map(show => {
-        return <SingleTitle  key={show.id} id={show.id} title={show.title} image={show.image} synopsis={show.synopsis}/>;
-    })
-    
+    render() {  
         return (
             <div className="box">{
-                showsData().map(show => {
+                this.state.shows.map(show => {
                     return (
-                        <SingleTitle  key={show.id} id={show.id} 
-                        title={show.title} image={show.image} 
-                        synopsis={show.synopsis}/>
+                        <SingleTitle  
+                            key={show.id} 
+                            id={show.id} 
+                            title={show.title} 
+                            image={show.image} 
+                        />
                     );
                 })
             }</div>
         );
+    }
 
 }
 
