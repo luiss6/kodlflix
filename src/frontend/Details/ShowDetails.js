@@ -25,10 +25,12 @@ class ShowDetails extends React.Component {
         if (show) {                 
             return (
                 show.id ? 
-                    <div className="ShowDetails">
-                        <h1>{show.title}</h1>
+                    <div className="show-details">
+                        <h1 className="details-title">
+                            {show.title}
+                        </h1>
                         <div className="container">
-                            <div className="text">
+                            <div className="details-synopsis">
                                 <p>{show.synopsis}</p>                           
                             </div>
                             <img 
@@ -36,7 +38,9 @@ class ShowDetails extends React.Component {
                                 alt={`${show.title} logo`} 
                             />                                  
                         </div>
-                        <Link to='/'>Go back to the shows Gallery</Link>
+                        <div className="details-link">
+                            <Link to='/'>Go back to the shows Gallery</Link>
+                        </div>
                     </div> :
                     <div></div>
             );
