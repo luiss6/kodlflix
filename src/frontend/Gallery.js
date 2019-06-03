@@ -13,10 +13,7 @@ class Gallery extends React.Component {
             .then(response => response.json())
             .then(shows => this.setState({ shows: shows }));
         }
-    
-  
-
-    
+        
     render() {  
         return (
             <div className="box">{

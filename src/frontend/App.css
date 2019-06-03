@@ -33,7 +33,7 @@ a {
 .cover img {
   height: 100%;
   width: 100%;
-     
+      
 }
 
 .cover-overlay {
@@ -55,8 +55,7 @@ a {
 }
 
 
-.cover:hover .cover-overlay {
-  /* color:rgb(245, 7, 7); */
+.cover:hover .cover-overlay { 
   bottom: 0;  
 }
 
